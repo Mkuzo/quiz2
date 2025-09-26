@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Age in 5 Years</title>
+</head>
+<body>
+    <label for="ageInput">Enter your age:</label>
+    <input type="number" id="ageInput" placeholder="Your age">
+    <button onclick="showFutureAge()">Calculate</button>
+    <div id="result"></div>
+    <script>
+        function showFutureAge() {
+            const age = Number(document.getElementById('ageInput').value);
+            const futureAge = age + 5;
+            document.getElementById('result').textContent = "In 5 years, you will be " + futureAge + " years old.";
+        }
+    </script>
+</body>
+</html>

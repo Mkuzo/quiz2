@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favorite Color</title>
+    <style>
+    </style>
+</head>
+<body>
+    <label for="colorInput">What is your favorite color?</label>
+    <input type="text" id="colorInput" placeholder="Type your favorite color">
+    <button onclick="showColor()">Submit</button>
+    <div id="result"></div>
+    <script>
+        function showColor() {
+            const color = document.getElementById('colorInput').value;
+            document.getElementById('result').textContent = "Your favorite color is " + color + ".";
+        }
+    </script>
+</body>
+</html>
